@@ -1,0 +1,40 @@
+{
+  "name": "luminee/chousun",
+  "description": "Make ClickHouse search like Laravel ORM, build ORM for ClickHouse",
+  "type": "library",
+  "keywords": [
+    "clickhouse",
+    "ch",
+    "sql",
+    "orm"
+  ],
+  "homepage": "https://github.com/Luminee/chousun",
+  "authors": [
+    {
+      "name": "LuminEe",
+      "email": "1123462990@qq.com",
+      "homepage": "https://github.com/Luminee"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1",
+    "guzzlehttp/guzzle": "^7.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Luminee\\CHouSun\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Luminee\\CHouSun\\CHouSunServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
+}
